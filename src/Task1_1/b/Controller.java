@@ -26,18 +26,18 @@ public class Controller {
         String line = "";
         for (int i = 0; i < months.length; i++) {
             ObservableList<Day> data = FXCollections.observableArrayList();
-            if(i!=0) data.add(new Day(Integer.parseInt(line.substring(0, 2)),Integer.parseInt(line.substring(11))));
-            TableColumn<Day,Integer> month = new TableColumn<>(months[i]);
+            if (i != 0) data.add(new Day(Integer.parseInt(line.substring(0, 2)), Integer.parseInt(line.substring(11))));
+            TableColumn<Day, Integer> month = new TableColumn<>(months[i]);
             TableColumn<Day, Integer> number = new TableColumn<>("Число");
             TableColumn<Day, Integer> temp = new TableColumn<>("Температура");
             while ((line = bf.readLine()) != null && (i + 1) == Integer.parseInt(line.substring(3, 5))) {
                 int d = Integer.parseInt(line.substring(0, 2));
                 int t = Integer.parseInt(line.substring(11));
-                data.add( new Day(d, t));
+                data.add(new Day(d, t));
             }
             number.setCellValueFactory(new PropertyValueFactory<>("number"));
             temp.setCellValueFactory(new PropertyValueFactory<>("temperature"));
-            month.getColumns().addAll(number,temp);
+            month.getColumns().addAll(number, temp);
             year.getColumns().add(month);
             year.setItems(data);
         }

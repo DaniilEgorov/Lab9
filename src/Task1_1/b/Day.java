@@ -8,16 +8,20 @@ public class Day {
         this.number = number;
         this.temperature = temperature;
     }
+
     public int getNumber() {
         return this.number;
     }
+
     public void setNumber(int number) {
         this.number = number;
     }
+
     public int getTemperature() {
         return this.temperature;
     }
-    public void setTemp(int temperature){
-        this.temperature=temperature;
+
+    public void setTemp(int temperature) {
+        this.temperature = temperature;
     }
 }

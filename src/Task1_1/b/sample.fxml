@@ -3,9 +3,12 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="pane" minWidth="226.0" prefHeight="400.0000999999975" prefWidth="770.0004220703049" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Task1_1.b.Controller">
-  <children>
-    <TableView fx:id="year" focusTraversable="false" prefHeight="400.0000999999975" prefWidth="770.0004220703049"
-               AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-  </children>
+<AnchorPane fx:id="pane" minWidth="226.0" prefHeight="400.0000999999975" prefWidth="770.0004220703049"
+            xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2"
+            fx:controller="Task1_1.b.Controller">
+    <children>
+        <TableView fx:id="year" focusTraversable="false" prefHeight="400.0000999999975" prefWidth="770.0004220703049"
+                   AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                   AnchorPane.topAnchor="0.0"/>
+    </children>
 </AnchorPane>
