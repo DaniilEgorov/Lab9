@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minWidth="226.0" prefHeight="400.0000999999975" prefWidth="226.00022207030997" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Task1_1.a.Controller">
+  <children>
+    <TableView fx:id="month" prefHeight="372.0" prefWidth="166.00022207030997" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="14.0">
+      <columns>
+        <TableColumn fx:id="numberColumn" prefWidth="63.0" text="Число" />
+        <TableColumn fx:id="temperatureColumn" prefWidth="102.0" text="Температура" />
+      </columns>
+    </TableView>
+  </children>
+</AnchorPane>
